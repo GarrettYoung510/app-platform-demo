@@ -1,0 +1,79 @@
+{
+  "main_url": "http://localhost:3000",
+  "scopes": [],
+  "features": [
+    {
+      "name": "dashboard_custom_widget",
+      "options": {
+        "widgets": [
+          {
+            "name": "Your first app",
+            "has_title": true,
+            "custom_widget_key": "your_first_app",
+            "source": "widget",
+            "options": [
+              {
+                "enum": [
+                  "system.cpu.idle",
+                  "system.load.1",
+                  "system.load.5",
+                  "system.load.15"
+                ],
+                "type": "string",
+                "name": "metric",
+                "label": "Your favorite metric"
+              },
+              {
+                "type": "string",
+                "name": "favorite-cheese",
+                "label": "Your favorite cheese",
+                "enum": ["Chevre", "Gruyere", "Mozzarella"]
+              }
+            ],
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Emojione_1F44B.svg/1024px-Emojione_1F44B.svg.png"
+          }
+        ]
+      }
+    },
+    {
+      "name": "dashboard_cog_menu",
+      "options": {
+        "items": [
+          {
+            "type": "event",
+            "key": "open-confirmation",
+            "label": "Please confirm"
+          },
+          {
+            "type": "event",
+            "key": "open-custom-modal",
+            "label": "Open a custom modal"
+          },
+          {
+            "type": "event",
+            "key": "open-custom-panel",
+            "label": "Open a custom side panel with args"
+          }
+        ],
+        "title": "Your first app"
+      }
+    },
+    {
+      "name": "modals",
+      "options": {}
+    },
+    {
+      "name": "side_panels",
+      "options": {}
+    },
+    {
+      "name": "widget_context_menu",
+      "options": {}
+    }
+  ],
+  "description": "A hello-world like application used as a starting point for apps",
+  "dev_mode_url": "http://localhost:3000",
+  "api_version": "v1",
+  "name": "Your first app",
+  "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Emojione_1F44B.svg/1024px-Emojione_1F44B.svg.png"
+}
