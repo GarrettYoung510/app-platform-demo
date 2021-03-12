@@ -34,10 +34,7 @@ function SidePanel() {
           Another thing
         </li>
       </ul>
-        <blockquote style={{backgroundColor: '#333', color: '#fff'}}>
-          <p><em>{JSON.stringify(args)}</em></p>
-      </blockquote>
-      <button onClick={testMethod}></button>
+      <button onClick={testMethod}>Go To</button>
     </div>
   );
 }
